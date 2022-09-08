@@ -4,6 +4,8 @@ from AbstractBusinessController import AbstractBusinessController
 from BusinessController import BusinessController
 from DatabaseController import DatabaseController
 
+#TODO implement better error handling
+
 class DataService:
   def __init__(self, businessController :AbstractBusinessController, api :Flask):
     self.businessController = businessController
