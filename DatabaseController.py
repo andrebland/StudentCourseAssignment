@@ -4,9 +4,9 @@ from tinydb.operations import delete
 
 class DatabaseController(AbstractDatabaseController):
     def __init__(self):
-        self.studentDatastore = TinyDB("data/students.json")
-        self.courseDatastore = TinyDB("data/courses.json")
-        self.enrollmentTable = TinyDB("data/enrollment.json")
+        self.studentDatastore = TinyDB("students.json")
+        self.courseDatastore = TinyDB("courses.json")
+        self.enrollmentTable = TinyDB("enrollment.json")
 
     def courseInsert(self, courseID :int, course :dict):
         self.courseDatastore.insert(table.Document(course, doc_id=courseID))
