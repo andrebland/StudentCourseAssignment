@@ -15,6 +15,6 @@ python3 sample_uasge.py
 
 TODO:  
 improved error handling  
-improved unit testing  
+improved unit testing - dataservice and businescontroller lack testing
 implement better system for managing student and course IDs, for now just using hash()  
 improve logic for checking date/time conflicts of courses (assumes courses can not be multiple days for now)  
